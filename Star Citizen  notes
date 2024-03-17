@@ -13,10 +13,16 @@
 5. Run the lug-helper and follow the onscreen prompts to install star citizen
 6. Launch Lutris, right click on Star Citizen go to configure>system options "Prefer System Libraries" should be enabled.
 
-*NOTE: Lutris: if Lutris errors on finding libvulkan only!
+NVIDIA Notes:
+1. If you have NVIDIA instead of AMD video card step 3 above will look like this: 
+sudo xbps-install -S lutris wine winetricks nvidia nvidia-libs-32bit Vulkan-Tools vulkan-loader vulkan-loader-32bit libunwind mesa-32bit gnutls gnutls-32bit psmisc freetype fluidsynth wine-32bit
+
+*NOTE for Lutris: if Lutris errors on finding libvulkan only!
 1. sudo mv /etc/ld.so.cache /tmp # delete cache
 2. sudo ldconfig # regenerate cache
 3. ldconfig -p | grep /usr/lib32/libvulkan.so
 
 *STEAM Notes: If Steam doesn't load or errors out, install the following package.
 1. mesa-ati-dri-32bit
+
+
