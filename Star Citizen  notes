@@ -8,14 +8,14 @@
 *Packages needed for Star Citizen (for AMD video cards - NVIDIA will be a bit different)
 1. sudo xbps-install -S  void-repo-multilib  void-repo-multilib-nonfree  void-repo-nonfree
 2. sudo xbps-install -Sy
-3. sudo xbps-install -S lutris wine winetricks mesa-vulkan-radeon mesa-vulkan-radeon-32bit Vulkan-Tools vulkan-loader vulkan-loader-32bit libunwind mesa-32bit gnutls gnutls-32bit psmisc freetype fluidsynth wine-32bit
+3. sudo xbps-install -S zenity lutris wine winetricks mesa-vulkan-radeon mesa-vulkan-radeon-32bit Vulkan-Tools vulkan-loader vulkan-loader-32bit libunwind mesa-32bit gnutls gnutls-32bit psmisc freetype fluidsynth wine-32bit
 4. Make sure to launch lutris one time before starting the lug-helper.  Once it loads all the necessary files and libraries close lutris.
 5. Run the lug-helper and follow the onscreen prompts to install star citizen
 6. Launch Lutris, right click on Star Citizen go to configure>system options "Prefer System Libraries" should be enabled.
 
 NVIDIA Notes:
 1. If you have NVIDIA instead of AMD video card step 3 above will look like this: 
-sudo xbps-install -S lutris wine winetricks nvidia nvidia-libs-32bit Vulkan-Tools vulkan-loader vulkan-loader-32bit libunwind mesa-32bit gnutls gnutls-32bit psmisc freetype fluidsynth wine-32bit
+sudo xbps-install -S zenity lutris wine winetricks nvidia nvidia-libs-32bit Vulkan-Tools vulkan-loader vulkan-loader-32bit libunwind mesa-32bit gnutls gnutls-32bit psmisc freetype fluidsynth wine-32bit
 
 *NOTE for Lutris: if Lutris errors on finding libvulkan only!
 1. sudo mv /etc/ld.so.cache /tmp # delete cache
