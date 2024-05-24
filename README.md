@@ -29,7 +29,7 @@ vm.max_map_count=16777216
 ```
 sudo xbps-install -S  void-repo-multilib  void-repo-multilib-nonfree  void-repo-nonfree
  ```
-*Update packages for xbps
+*Update packages and repos for xbps
 
 ```
 sudo xbps-install -Sy
