@@ -1,5 +1,8 @@
 *Star Citizen max-map-count and file limits adjustments.
-1. Edit  /etc/sysctl.conf add ``` vm.max_map_count=16777216 ```
+1. Edit  /etc/sysctl.conf add 
+``` 
+vm.max_map_count=16777216
+```
 2. Edit  /etc/security/limits.conf add * hard nofile 524288
 3. Edit /etc/pam.d/lightdm add session required pam_limits.so
 4. Edit /etc/pam.d/login add session required pam_limits.so
