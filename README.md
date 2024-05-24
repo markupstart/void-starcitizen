@@ -1,7 +1,9 @@
 Notes on using the Lug Helper to install Star Citizen in Void Linux
 
 Lug Helper located here: https://github.com/starcitizen-lug/lug-helper
+
 *Star Citizen max-map-count and file limits adjustments.
+
 1. Edit  /etc/sysctl.conf add 
 ``` 
 vm.max_map_count=16777216
