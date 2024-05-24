@@ -43,7 +43,7 @@ sudo xbps-install -S zenity lutris wine winetricks mesa-vulkan-radeon mesa-vulka
 8. Launch Lutris, right click on Star Citizen go to configure>system options "Prefer System Libraries" should be enabled.
 
 NVIDIA Notes:
-1. If you have NVIDIA instead of AMD video card step 3 above will look like this:
+1. If you have NVIDIA instead of AMD video card the install packages that are needed step above will look like this:
 ```
 sudo xbps-install -S zenity lutris wine winetricks nvidia nvidia-libs-32bit Vulkan-Tools vulkan-loader vulkan-loader-32bit libunwind mesa-32bit gnutls gnutls-32bit psmisc freetype fluidsynth wine-32bit
 ```
