@@ -13,20 +13,22 @@ vm.max_map_count=16777216
 3. Edit /etc/pam.d/lightdm add
 ```
  session required pam_limits.so
-'''
+```
 4. Edit /etc/pam.d/login add
 ```
  session required pam_limits.so
-'''
+```
 5. Reboot after editing and saving the files.
 
 *Packages needed for Star Citizen (for AMD video cards - NVIDIA will be a bit different)
-``|
+```
 sudo xbps-install -S  void-repo-multilib  void-repo-multilib-nonfree  void-repo-nonfree
  ```
+
  ```
 sudo xbps-install -Sy
 ```
+
 ```
 sudo xbps-install -S zenity lutris wine winetricks mesa-vulkan-radeon mesa-vulkan-radeon-32bit Vulkan-Tools vulkan-loader vulkan-loader-32bit libunwind mesa-32bit gnutls gnutls-32bit psmisc freetype fluidsynth wine-32bit
 ```
@@ -44,9 +46,11 @@ sudo xbps-install -S zenity lutris wine winetricks nvidia nvidia-libs-32bit Vulk
 ```
 sudo mv /etc/ld.so.cache /tmp # delete cache
 ```
+
 ```
 sudo ldconfig # regenerate cache
 ```
+
 ```
 ldconfig -p | grep /usr/lib32/libvulkan.so
 ```
