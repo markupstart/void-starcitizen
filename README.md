@@ -45,21 +45,7 @@ sudo xbps-install -S curl zenity wine winetricks mesa-vulkan-radeon Vulkan-Tools
 NVIDIA Notes:
 1. If you have NVIDIA instead of AMD video card the install packages that are needed step above will look like this:
 ```
-sudo xbps-install -S curl zenity lutris wine winetricks nvidia nvidia-libs-32bit Vulkan-Tools vulkan-loader vulkan-loader-32bit libunwind mesa-32bit gnutls gnutls-32bit psmisc freetype fluidsynth wine-32bit
-```
-
-*NOTE for Lutris: if Lutris errors on finding libvulkan only!
-```
-sudo mv /etc/ld.so.cache /tmp # delete cache
-```
-
-```
-sudo ldconfig # regenerate cache
-```
-
-```
-ldconfig -p | grep /usr/lib32/libvulkan.so
-```
+sudo xbps-install -S curl zenity wine winetricks nvidia Vulkan-Tools vulkan-loader libunwind gnutls psmisc freetype fluidsynth
 
 *STEAM Notes: If Steam doesn't load or errors out, install the following package.
 1. mesa-ati-dri-32bit
